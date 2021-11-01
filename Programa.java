@@ -605,3 +605,8 @@ System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
                         break;
                     }
                 }
+// Si ponen 4 hara la funcion de ver la numerologia dependiendo de una fecha
+                else if (accion == 4) {
+                    try {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println("Calcular el número según la numerología, para esto debemos saber cual es el dia de su nacimiento.");
