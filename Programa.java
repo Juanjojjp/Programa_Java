@@ -9,3 +9,10 @@ class Programa {
         Scanner datosEntrada = new Scanner(System.in);
         Scanner datosExtras = new Scanner(System.in);
         
+        System.out.println("\nCual es su nombre: ");
+        String nombre = datosEntrada.nextLine();
+        System.out.println("\n------------------------------------------------------------");
+        System.out.println("\nBienvenido "+nombre);
+        boolean seguir = true;
+        // Inicio del bucle del programa
+        
