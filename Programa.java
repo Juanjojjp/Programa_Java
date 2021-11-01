@@ -25,3 +25,470 @@ class Programa {
                 // Pide que accion desea realizar segun el numero
                 int accion = datosEntrada.nextInt(); 
                 // Le dara su signo del zodiaco segun su fecha de nacimiento
+                if (accion == 1) {
+                    System.out.println("\n------------------------------------------------------------");
+                    System.out.println("Para saber tu signo del zodiaco deberas poner tu mes y dia de nacimiento...\n");
+                    System.out.println("Pon tu mes de nacimiento (Pon unicamente el numero correspondiente): \n");
+                    System.out.println("- Enero (1).\n- Febrero (2).\n- Marzo (3).\n- Abril (4).\n- Mayo (5).\n- Junio (6).\n- Julio (7).\n- Agosto (8).\n- Septiembre (9).\n- Octubre (10).\n- Noviembre (11).\n- Diciembre (12).\n\nEscoge una opcion: ");
+                    int mes = datosEntrada.nextInt();
+
+                    System.out.println("\nAhora pon tu dia de nacimiento: ");
+                    int dia = datosEntrada.nextInt();
+                    // Acuario
+                    if (mes == 1 && dia >= 21 && dia <= 31 || mes == 2 && dia >= 1 && dia <= 19) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Acuario *");
+                        System.out.println("------------------------------------------------------------\n");
+                        Thread.sleep(2*1000);
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Aire.\n- Piedra: Amatista.\n- Puntos fuertes: innovador y vanguardista.\n- Colores: violeta, azul y cobalto.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Piscis
+                    if (mes == 2 && dia >= 20 && dia <= 29 || mes == 3 && dia >= 1 && dia <= 20) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Piscis *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Agua.\n- Piedra: zafiro agua marina.\n- Puntos fuertes: tacto y tenacidad.\n- Color: azul.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Aries
+                    if (mes == 3 && dia >= 21 && dia <= 31 || mes == 4 && dia >= 1 && dia <= 20) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Aries *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Fuego.\n- Piedras: rubís, amatistas.\n- Puntos fuertes: rapidez y fuerza.\n- Color: rojo.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Tauro
+                    if (mes == 4 && dia >= 21 && dia <= 30 || mes == 5 && dia >= 1 && dia <= 21) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Tauro *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Tierra.\n- Piedras: Esmeralda y Aguamarina.\n- Puntos fuertes: resistencia, prudencia y solidez.\n- Color: verde.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Géminis
+                    if (mes == 5 && dia >= 22 && dia <= 31 || mes == 6 && dia >= 1 && dia <= 21) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Géminis *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Aire.\n- Piedras: Jade y Turquesa.\n- Puntos fuertes: agilidad, flexibilidad y adaptación.\n- Color: multicolor.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Cáncer
+                    if (mes == 6 && dia >= 22 && dia <= 30 || mes == 7 && dia >= 1 && dia <= 22) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Cáncer *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Agua.\n- Piedras: ópalo y piedra fina.\n- Puntos fuertes: perseverancia, imaginación y creatividad.\n- Colores: blanco y gris perla.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Leo
+                    if (mes == 7 && dia >= 23 && dia <= 31 || mes == 8 && dia >= 1 && dia <= 23) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Leo *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Fuego.\n- Piedras: topacio y diamante.\n- Puntos fuertes: bondad y organización.\n- Colores: amarillo y naranja.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Virgo
+                    if (mes == 8 && dia >= 24 && dia <= 31 || mes == 9 && dia >= 1 && dia <= 23) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Virgo *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Tierra.\n- Piedras: ágata y jaspe.\n- Puntos fuertes: precisión y lógica.\n- Colores: beige y gris.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Libra
+                    if (mes == 9 && dia >= 24 && dia <= 30 || mes == 10 && dia >= 1 && dia <= 23) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Libra *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Aire.\n- Piedras: zafiro y coral.\n- Puntos fuertes: equilibrio, justicia y paz.\n- Color: pastel.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Escorpio
+                    if (mes == 10 && dia >= 24 && dia <= 31 || mes == 11 && dia >= 1 && dia <= 22) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Escorpio *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Agua.\n- Piedras: Granate y rubí.\n- Puntos fuertes: Tenacidad y tacto.\n- Colores: rojo y gris.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Sagitario
+                    if (mes == 11 && dia >= 23 && dia <= 30 || mes == 12 && dia >= 1 && dia <= 21) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Sagitario *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Fuego.\n- Piedra: granate zafiro.\n- Punto fuerte: optimismo.\n- Colores: azul noche y rojo.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Capricornio
+                    if (mes == 12 && dia >= 22 && dia <= 31 || mes == 1 && dia >= 1 && dia <= 20) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println(nombre + " tu signo zodiacal es:\n* Capricornio *");
+                        Thread.sleep(2*1000);
+                        System.out.println("------------------------------------------------------------\n");
+                        System.out.println("Deseas conocer informacion extra sobre tu signo zodiacal?  (Y/N)");
+                        char siNo = datosExtras.next().charAt(0);
+                        // Da informacion extra respecto al signo
+                        if (siNo == 'y' || siNo == 'Y'){
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Informacion extra\n");
+                            System.out.println("- Elemento: Tierra.\n- Piedra: ónix azabache.\n- Punto fuerte: resistencia.\n- Colores: negro y rojo.");
+                            Thread.sleep(8*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                        // Cierra el programa en cuyo caso que se pusieran datos incorrectos
+                        else if (siNo != 'N' && siNo != 'n' && siNo != 'Y' && siNo != 'y') {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Pusiste un dato no valido.");
+                            Thread.sleep(1*1000);
+                            System.out.println("\nCerrando programa...\n");
+                            Thread.sleep(2*1000);
+                        }
+                        // Vuelve a iniciar el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Espero que haya sido de utilidad.");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                }
+                // Le dira cuantos dias ah vivido
