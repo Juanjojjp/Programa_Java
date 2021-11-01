@@ -583,7 +583,7 @@ class Programa {
                     }
                 }
                 // Si ponen 3 dara sus años en años perro
-else if (accion == 3) {
+   else if (accion == 3) {
                     try {
                         System.out.println("\n------------------------------------------------------------");
-                        System.out.println("Para calcular cuantos años perros tiene usted, debemos saber cuantos años tiene.\n");
+                        System.out.println("Para calcular cuantos años perros tiene usted, debemos saber cuantos años tiene.\n");             
