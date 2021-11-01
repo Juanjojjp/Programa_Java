@@ -665,3 +665,10 @@ catch (Exception InputMismatchException) {
                 }
                 // Vuelve a iniciar el bucle en cuyo caso que ponga un numero diferente a las opciones dadas
                 else {
+System.out.println("\n------------------------------------------------------------");
+                    System.out.println("Pon una opcion valida entre 1, 2, 3, 4, 5 o 6.");
+                    Thread.sleep(4*1000);
+                    System.out.println("------------------------------------------------------------");
+                    continue;
+                }
+            }
