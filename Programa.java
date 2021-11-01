@@ -587,3 +587,7 @@ class Programa {
                     try {
                         System.out.println("\n------------------------------------------------------------");
                         System.out.println("Para calcular cuantos años perros tiene usted, debemos saber cuantos años tiene.\n");             
+           System.out.println("Cuantos años tiene:");
+                        int yearsActuales = datosExtras.nextInt();
+                        int yearsPerro = yearsActuales/7;
+                        System.out.println(nombre+" tienes "+yearsActuales+" años, y en perro equivalen a "+yearsPerro+" años perros.");             
