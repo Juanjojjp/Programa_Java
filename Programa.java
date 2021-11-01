@@ -583,47 +583,47 @@ class Programa {
                     }
                 }
                 // Si ponen 3 dara sus años en años perro
-   else if (accion == 3) {
+                else if (accion == 3) {
                     try {
                         System.out.println("\n------------------------------------------------------------");
                         System.out.println("Para calcular cuantos años perros tiene usted, debemos saber cuantos años tiene.\n");             
-           System.out.println("Cuantos años tiene:");
+                        System.out.println("Cuantos años tiene:");
                         int yearsActuales = datosExtras.nextInt();
                         int yearsPerro = yearsActuales/7;
                         System.out.println(nombre+" tienes "+yearsActuales+" años, y en perro equivalen a "+yearsPerro+" años perros.");             
-Thread.sleep(4*1000);
+                        Thread.sleep(4*1000);
                         System.out.println("\nRegresando al programa...");
                         Thread.sleep(2*1000);
- System.out.println("------------------------------------------------------------");
+                         System.out.println("------------------------------------------------------------");
                         continue;
-}
+                    }
                     // Excepcion por si pone algo diferente a un numero
                     catch (Exception InputMismatchException) {
                         System.out.println("\n------------------------------------------------------------");
-System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
+                        System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
                         System.out.println("------------------------------------------------------------\n");
                         break;
                     }
                 }
-// Si ponen 4 hara la funcion de ver la numerologia dependiendo de una fecha
+                // Si ponen 4 hara la funcion de ver la numerologia dependiendo de una fecha
                 else if (accion == 4) {
                     try {
                         System.out.println("\n------------------------------------------------------------");
                         System.out.println("Calcular el número según la numerología, para esto debemos saber cual es el dia de su nacimiento.");
- System.out.println("Cual es su dia de nacimiento:");
+                        System.out.println("Cual es su dia de nacimiento:");
                         int dia_nacimiento = datosExtras.nextInt();
                         // El codigo que se ejecutara si pone una fecha igual o menor a 31
                         if (dia_nacimiento <= 31) {
-String diaStr = String.valueOf(dia_nacimiento);
+                            String diaStr = String.valueOf(dia_nacimiento);
                             char cifra;
                             int valor=0, res=0;
                             // Separa el numero
- for(int i = 0; i < diaStr.length(); i++) {
+                            for(int i = 0; i < diaStr.length(); i++) {
                                 cifra = diaStr.charAt(i);
                                 valor = Character.getNumericValue(cifra);
                                 res = res + valor;
                             }
-// Da la numerologia
+                            // Da la numerologia
                             System.out.println("\n"+nombre+" su numerología es: "+res);
                             Thread.sleep(4*1000);
                             System.out.println("\nRegresando al programa...");
@@ -635,13 +635,13 @@ String diaStr = String.valueOf(dia_nacimiento);
                             System.out.println("\n------------------------------------------------------------");
                             System.out.println("No puso un numero valido");
                             Thread.sleep(2*1000);
- System.out.println("\nRegresando al programa...");
+                            System.out.println("\nRegresando al programa...");
                             Thread.sleep(2*1000);
                             System.out.println("------------------------------------------------------------");                           
                             continue;
                         }
                     }
-catch (Exception InputMismatchException) {
+                    catch (Exception InputMismatchException) {
                         System.out.println("\n------------------------------------------------------------");
                         System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
                         System.out.println("------------------------------------------------------------\n");
@@ -657,6 +657,7 @@ catch (Exception InputMismatchException) {
                     System.out.println("\nRegresando al programa...");
                     System.out.println("------------------------------------------------------------");
                     Thread.sleep(2*1000);
+                    continue;
 }
                 // Si ponen 6 se va a cerra el bucle, lo cual cierra el programa
                 else if (accion == 6) {
@@ -665,21 +666,21 @@ catch (Exception InputMismatchException) {
                 }
                 // Vuelve a iniciar el bucle en cuyo caso que ponga un numero diferente a las opciones dadas
                 else {
-System.out.println("\n------------------------------------------------------------");
+                    System.out.println("\n------------------------------------------------------------");
                     System.out.println("Pon una opcion valida entre 1, 2, 3, 4, 5 o 6.");
                     Thread.sleep(4*1000);
                     System.out.println("------------------------------------------------------------");
                     continue;
                 }
             }
-// Excepcion en cuyo caso se escriba algo diferente a un numero
+            // Excepcion en cuyo caso se escriba algo diferente a un numero
             catch (Exception InputMismatchException) {
                 System.out.println("\n------------------------------------------------------------");
                 System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
                 System.out.println("------------------------------------------------------------\n");
                 seguir = false;
             }
-// Cierre del scanner
+            // Cierre del scanner
             datosEntrada.close();
             datosExtras.close();
         }
