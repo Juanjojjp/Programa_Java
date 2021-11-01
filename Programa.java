@@ -630,3 +630,8 @@ String diaStr = String.valueOf(dia_nacimiento);
                             Thread.sleep(2*1000);
                             System.out.println("------------------------------------------------------------"); 
                             continue;
+}
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("No puso un numero valido");
+                            Thread.sleep(2*1000);
