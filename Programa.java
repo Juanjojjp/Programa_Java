@@ -623,3 +623,10 @@ String diaStr = String.valueOf(dia_nacimiento);
                                 valor = Character.getNumericValue(cifra);
                                 res = res + valor;
                             }
+// Da la numerologia
+                            System.out.println("\n"+nombre+" su numerología es: "+res);
+                            Thread.sleep(4*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------"); 
+                            continue;
