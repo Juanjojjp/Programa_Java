@@ -600,3 +600,8 @@ Thread.sleep(4*1000);
                     // Excepcion por si pone algo diferente a un numero
                     catch (Exception InputMismatchException) {
                         System.out.println("\n------------------------------------------------------------");
+System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
+                        System.out.println("------------------------------------------------------------\n");
+                        break;
+                    }
+                }
