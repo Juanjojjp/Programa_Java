@@ -492,3 +492,94 @@ class Programa {
                     }
                 }
                 // Le dira cuantos dias ah vivido
+                 else if (accion == 2) {
+                    System.out.println("\n------------------------------------------------------------");
+                    System.out.println("Para calcular los dias vividos vamos a pedirte tu fecha de nacimiento.\n"); 
+                    System.out.println("Porfavor Introduzaca el año en el que nacio:");
+                    int yearNacimiento = datosEntrada.nextInt();
+                    System.out.println("Porfavor Introduzaca el numero del mes en el que nacio:");
+                    int mesNacimiento = datosEntrada.nextInt();
+                    System.out.println("Porfavor Introduzaca el dia en el que nacio:");
+                    int diaNacimiento = datosEntrada.nextInt();
+                    // Formato para ver la fecha actual
+                    DateTimeFormatter fechaActualYear = DateTimeFormatter.ofPattern("yyyy");
+                    DateTimeFormatter fechaActualMes = DateTimeFormatter.ofPattern("MM");
+                    DateTimeFormatter fechaActualDia = DateTimeFormatter.ofPattern("dd");
+
+                    String fechaYear = fechaActualYear.format(LocalDateTime.now());
+                    String fechaMes = fechaActualMes.format(LocalDateTime.now());
+                    String fechaDia = fechaActualDia.format(LocalDateTime.now());
+                    // Cambia la fecha que esta en string por valores enteros
+                    int fechaIntYear = Integer.valueOf (fechaYear);
+                    int fechaIntMes = Integer.valueOf (fechaMes);
+                    int fechaIntDia = Integer.valueOf (fechaDia);
+                    // Comandos a realizar para saber los dias
+                    try {
+                        if (yearNacimiento > 0 && yearNacimiento < 2022 && mesNacimiento > 0 && mesNacimiento <= 12 && diaNacimiento > 0 && diaNacimiento <= 31) {
+                            int years_a_dias = (fechaIntYear - yearNacimiento)*365;
+                            if (mesNacimiento > fechaIntMes) {
+                                int mes_a_dias = (mesNacimiento - fechaIntMes)*30;
+                                if (diaNacimiento >= fechaIntDia) {
+                                    int dia = (diaNacimiento - fechaIntDia);
+                                    int dias_vividos = years_a_dias+mes_a_dias+dia;
+                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    continue;
+                                }
+                                if (diaNacimiento < fechaIntDia) {
+                                    int dia = (fechaIntDia - diaNacimiento);
+                                    int dias_vividos = years_a_dias+mes_a_dias+dia;
+                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    continue;
+                                }
+                            }
+                            else if (mesNacimiento < fechaIntMes) {
+                                int mes_a_dias = (fechaIntMes - mesNacimiento )*30;
+                                if (diaNacimiento >= fechaIntDia) {
+                                    int dia = (diaNacimiento - fechaIntDia);
+                                    int dias_vividos = years_a_dias+mes_a_dias+dia;
+                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    continue;
+                                }
+                                if (diaNacimiento < fechaIntDia) {
+                                    int dia = (fechaIntDia - diaNacimiento);
+                                    int dias_vividos = years_a_dias+mes_a_dias+dia;
+                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    continue;
+                                }
+                            }
+                            else {
+                                int mes_a_dias = 0;
+                                if (diaNacimiento >= fechaIntDia) {
+                                    int dia = (diaNacimiento - fechaIntDia);
+                                    int dias_vividos = years_a_dias+mes_a_dias+dia;
+                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    continue;
+                                }
+                                if (diaNacimiento < fechaIntDia) {
+                                    int dia = (fechaIntDia - diaNacimiento);
+                                    int dias_vividos = years_a_dias+mes_a_dias+dia;
+                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    continue;
+                                }
+                            }                           
+                        }
+                        // Si se pone un dato que no existe se reinicia el bucle
+                        else {
+                            System.out.println("\n------------------------------------------------------------");
+                            System.out.println("Has puesto un año, un mes o un dia que no existen");
+                            Thread.sleep(2*1000);
+                            System.out.println("\nRegresando al programa...");
+                            Thread.sleep(2*1000);
+                            System.out.println("------------------------------------------------------------");
+                            continue;
+                        }
+                    }
+                    // Si se pone un string cierra el programa
+                    catch (Exception InputMismatchException) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
+                        System.out.println("------------------------------------------------------------\n");
+                        break;
+                    }
+                }
+                // Si ponen 3 dara sus años en años perro
