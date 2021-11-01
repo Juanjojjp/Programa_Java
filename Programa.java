@@ -679,3 +679,10 @@ System.out.println("\n----------------------------------------------------------
                 System.out.println("------------------------------------------------------------\n");
                 seguir = false;
             }
+// Cierre del scanner
+            datosEntrada.close();
+            datosExtras.close();
+        }
+
+    }
+}
