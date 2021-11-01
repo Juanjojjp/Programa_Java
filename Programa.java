@@ -610,3 +610,7 @@ System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
                     try {
                         System.out.println("\n------------------------------------------------------------");
                         System.out.println("Calcular el número según la numerología, para esto debemos saber cual es el dia de su nacimiento.");
+ System.out.println("Cual es su dia de nacimiento:");
+                        int dia_nacimiento = datosExtras.nextInt();
+                        // El codigo que se ejecutara si pone una fecha igual o menor a 31
+                        if (dia_nacimiento <= 31) {
