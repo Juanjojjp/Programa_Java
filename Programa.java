@@ -16,3 +16,9 @@ class Programa {
         boolean seguir = true;
         // Inicio del bucle del programa
         
+        while (seguir == true) {
+            // Opciones a elegir
+            System.out.println("\nQue accion deseas realizar "+ nombre+":\n1) Calcular su signo del zodiaco.\n2) Calcular los días vividos desde su fecha de nacimiento.\n3) Calcular su edad en años de perro.\n4) Calcular el número según la numerología.\n5) Creditos.\n6) Salir.\n");
+            System.out.println("Escoge una opcion entre: 1 - 2 - 3 - 4 - 5 - 6");
+            // Codigo a realizar si pone un numero
+            
