@@ -594,3 +594,5 @@ class Programa {
 Thread.sleep(4*1000);
                         System.out.println("\nRegresando al programa...");
                         Thread.sleep(2*1000);
+ System.out.println("------------------------------------------------------------");
+                        continue;
