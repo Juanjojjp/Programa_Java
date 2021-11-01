@@ -657,3 +657,11 @@ catch (Exception InputMismatchException) {
                     System.out.println("\nRegresando al programa...");
                     System.out.println("------------------------------------------------------------");
                     Thread.sleep(2*1000);
+}
+                // Si ponen 6 se va a cerra el bucle, lo cual cierra el programa
+                else if (accion == 6) {
+                    System.out.println("\nHasta la proxima "+nombre+"!\n");
+                    seguir = false;
+                }
+                // Vuelve a iniciar el bucle en cuyo caso que ponga un numero diferente a las opciones dadas
+                else {
