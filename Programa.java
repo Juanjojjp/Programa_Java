@@ -618,3 +618,8 @@ String diaStr = String.valueOf(dia_nacimiento);
                             char cifra;
                             int valor=0, res=0;
                             // Separa el numero
+ for(int i = 0; i < diaStr.length(); i++) {
+                                cifra = diaStr.charAt(i);
+                                valor = Character.getNumericValue(cifra);
+                                res = res + valor;
+                            }
