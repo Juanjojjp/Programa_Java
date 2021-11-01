@@ -575,4 +575,11 @@ class Programa {
                         }
                     }
                     // Si se pone un string cierra el programa
-                    
+                    catch (Exception InputMismatchException) {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
+                        System.out.println("------------------------------------------------------------\n");
+                        break;
+                    }
+                }
+                // Si ponen 3 dara sus años en años perro
