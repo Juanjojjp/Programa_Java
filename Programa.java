@@ -672,3 +672,10 @@ System.out.println("\n----------------------------------------------------------
                     continue;
                 }
             }
+// Excepcion en cuyo caso se escriba algo diferente a un numero
+            catch (Exception InputMismatchException) {
+                System.out.println("\n------------------------------------------------------------");
+                System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
+                System.out.println("------------------------------------------------------------\n");
+                seguir = false;
+            }
