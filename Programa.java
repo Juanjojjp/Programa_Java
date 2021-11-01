@@ -614,3 +614,7 @@ System.out.println("   Solo se permiten numeros, vuelve a ejecutar el codigo.");
                         int dia_nacimiento = datosExtras.nextInt();
                         // El codigo que se ejecutara si pone una fecha igual o menor a 31
                         if (dia_nacimiento <= 31) {
+String diaStr = String.valueOf(dia_nacimiento);
+                            char cifra;
+                            int valor=0, res=0;
+                            // Separa el numero
