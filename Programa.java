@@ -596,3 +596,7 @@ Thread.sleep(4*1000);
                         Thread.sleep(2*1000);
  System.out.println("------------------------------------------------------------");
                         continue;
+}
+                    // Excepcion por si pone algo diferente a un numero
+                    catch (Exception InputMismatchException) {
+                        System.out.println("\n------------------------------------------------------------");
