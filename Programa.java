@@ -647,3 +647,13 @@ catch (Exception InputMismatchException) {
                         System.out.println("------------------------------------------------------------\n");
                         break;
                     }
+    
+                }
+                // Si ponen 5 se veran los creditos de quienes lo crearon
+                else if (accion == 5) {
+                    System.out.println("\n------------------------------------------------------------");
+                    System.out.println("Creadores:\n=> Juan Jose Perez Franco.\n=> Carlos Daniel Bohorquez Bolanos.");
+                    Thread.sleep(5*1000);
+                    System.out.println("\nRegresando al programa...");
+                    System.out.println("------------------------------------------------------------");
+                    Thread.sleep(2*1000);
