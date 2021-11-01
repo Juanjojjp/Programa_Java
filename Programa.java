@@ -591,3 +591,6 @@ class Programa {
                         int yearsActuales = datosExtras.nextInt();
                         int yearsPerro = yearsActuales/7;
                         System.out.println(nombre+" tienes "+yearsActuales+" años, y en perro equivalen a "+yearsPerro+" años perros.");             
+Thread.sleep(4*1000);
+                        System.out.println("\nRegresando al programa...");
+                        Thread.sleep(2*1000);
