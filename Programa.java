@@ -12,14 +12,30 @@ class Programa {
         System.out.println("\nCual es su nombre: ");
         String nombre = datosEntrada.nextLine();
         System.out.println("\n------------------------------------------------------------");
-        System.out.println("\nBienvenido "+nombre);
+        System.out.println("\nBienvenido "+nombre+"!");
         boolean seguir = true;
         // Inicio del bucle del programa
         
         while (seguir == true) {
             // Opciones a elegir
-            System.out.println("\nQue accion deseas realizar "+ nombre+":\n1) Calcular su signo del zodiaco.\n2) Calcular los días vividos desde su fecha de nacimiento.\n3) Calcular su edad en años de perro.\n4) Calcular el número según la numerología.\n5) Creditos.\n6) Salir.\n");
-            System.out.println("Escoge una opcion entre: 1 - 2 - 3 - 4 - 5 - 6");
+            System.out.println("   ________________________________________");
+            System.out.println(" / \\                                       \\.");
+            System.out.println("|   |                                      |.");
+            System.out.println(" \\_ |                                      |.");
+            System.out.println("    |      Que accion deseas realizar      |.");
+            System.out.println("    |                                      |.");
+            System.out.println("    | 1) Calcular su signo del zodiaco.    |.");
+            System.out.println("    | 2) Calcular los días vividos.        |.");
+            System.out.println("    | 3) Calcular su edad en años perro.   |.");
+            System.out.println("    | 4)Calcular su número de numerología. |.");
+            System.out.println("    | 5) Creditos.                         |.");
+            System.out.println("    | 6) Salir.                            |.");
+            System.out.println("    |                                      |.");
+            System.out.println("    | Escoge una opcion entre:             |.");
+            System.out.println("    | 1 - 2 - 3 - 4 - 5 - 6                |.");
+            System.out.println("    |   ___________________________________|___");
+            System.out.println("    |  /                                      /.");
+            System.out.println("    \\_/______________________________________/.");
             // Codigo a realizar si pone un numero
             try {
                 // Pide que accion desea realizar segun el numero
@@ -29,7 +45,29 @@ class Programa {
                     System.out.println("\n------------------------------------------------------------");
                     System.out.println("Para saber tu signo del zodiaco deberas poner tu mes y dia de nacimiento...\n");
                     System.out.println("Pon tu mes de nacimiento (Pon unicamente el numero correspondiente): \n");
-                    System.out.println("- Enero (1).\n- Febrero (2).\n- Marzo (3).\n- Abril (4).\n- Mayo (5).\n- Junio (6).\n- Julio (7).\n- Agosto (8).\n- Septiembre (9).\n- Octubre (10).\n- Noviembre (11).\n- Diciembre (12).\n\nEscoge una opcion: ");
+                    
+                    System.out.println(".-=~=-.                                   .-=~=-.");
+                    System.out.println("(__  _)-._.-=-._.-=-._.-=-._.-=-._.-=-._.-(__  _)");
+                    System.out.println("( _ __)                                   ( _ __)");
+                    System.out.println("(__  _)               Meses               (__  _)");
+                    System.out.println("(_ ___)                                   (_ ___)");
+                    System.out.println("(__  _)          Enero (1)                (__  _)");
+                    System.out.println("( _ __)          Febrero (2)              ( _ __)");
+                    System.out.println("(__  _)          Marzo (3)                (__  _)");
+                    System.out.println("(_ ___)          Abril (4)                (_ ___)");
+                    System.out.println("(__  _)          Mayo (5)                 (__  _)");
+                    System.out.println("( _ __)          Junio (6)                ( _ __)");
+                    System.out.println("(__  _)          Julio (7)                (__  _)");
+                    System.out.println("(__  _)          Agosto (8)               (__  _)");
+                    System.out.println("(_ ___)          Septiembre (9)           (_ ___)");
+                    System.out.println("(__  _)          Octubre (10)             (__  _)");
+                    System.out.println("(__  _)          Noviembre (11)           (__  _)");
+                    System.out.println("(__  _)          Diciembre (12)           (__  _)");
+                    System.out.println("(__  _)                                   (__  _)");     
+                    System.out.println("(_ ___)-._.-=-._.-=-._.-=-._.-=-._.-=-._.-(_ ___)");
+                    System.out.println("`-._.-'                                   `-._.-'");
+                    System.out.println("Escoge una opcion: ");
+                    
                     int mes = datosEntrada.nextInt();
 
                     System.out.println("\nAhora pon tu dia de nacimiento: ");
@@ -531,14 +569,14 @@ class Programa {
                                 if (diaNacimiento >= fechaIntDia) {
                                     int dia = (diaNacimiento - fechaIntDia);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
-                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
                                     int dia = (fechaIntDia - diaNacimiento);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
-                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
                                     continue;
                                 }
@@ -548,14 +586,14 @@ class Programa {
                                 if (diaNacimiento >= fechaIntDia) {
                                     int dia = (diaNacimiento - fechaIntDia);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
-                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
                                     int dia = (fechaIntDia - diaNacimiento);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
-                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
                                     continue;
                                 }
@@ -565,14 +603,14 @@ class Programa {
                                 if (diaNacimiento >= fechaIntDia) {
                                     int dia = (diaNacimiento - fechaIntDia);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
-                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
                                     int dia = (fechaIntDia - diaNacimiento);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
-                                    System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
                                     continue;
                                 }
