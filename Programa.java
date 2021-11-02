@@ -571,6 +571,9 @@ class Programa {
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
+                                    System.out.println("\nRegresando al programa...");
+                                    Thread.sleep(2 * 1000);
+                                    System.out.println("------------------------------------------------------------");
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
@@ -578,6 +581,9 @@ class Programa {
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
+                                    System.out.println("\nRegresando al programa...");
+                                    Thread.sleep(2 * 1000);
+                                    System.out.println("------------------------------------------------------------");
                                     continue;
                                 }
                             }
@@ -588,6 +594,9 @@ class Programa {
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
+                                    System.out.println("\nRegresando al programa...");
+                                    Thread.sleep(2 * 1000);
+                                    System.out.println("------------------------------------------------------------");
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
@@ -595,6 +604,9 @@ class Programa {
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
+                                    System.out.println("\nRegresando al programa...");
+                                    Thread.sleep(2 * 1000);
+                                    System.out.println("------------------------------------------------------------");
                                     continue;
                                 }
                             }
@@ -605,6 +617,9 @@ class Programa {
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
+                                    System.out.println("\nRegresando al programa...");
+                                    Thread.sleep(2 * 1000);
+                                    System.out.println("------------------------------------------------------------");
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
@@ -612,6 +627,9 @@ class Programa {
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("\nHas vivido "+dias_vividos+" dias.");
                                     Thread.sleep(4 * 1000);
+                                    System.out.println("\nRegresando al programa...");
+                                    Thread.sleep(2 * 1000);
+                                    System.out.println("------------------------------------------------------------");
                                     continue;
                                 }
                             }                           
