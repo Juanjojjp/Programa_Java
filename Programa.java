@@ -489,6 +489,15 @@ class Programa {
                             System.out.println("------------------------------------------------------------");
                             continue;
                         }
+                    } 
+                    else {
+                        System.out.println("\n------------------------------------------------------------");
+                        System.out.println("Has puesto un mes o un dia que no existen");
+                        Thread.sleep(2 * 1000);
+                        System.out.println("\nRegresando al programa...");
+                        Thread.sleep(2 * 1000);
+                        System.out.println("------------------------------------------------------------");
+                        continue;
                     }
                 }
                 // Le dira cuantos dias ah vivido
