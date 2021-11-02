@@ -27,7 +27,7 @@ class Programa {
             System.out.println("    | 1) Calcular su signo del zodiaco.    |.");
             System.out.println("    | 2) Calcular los días vividos.        |.");
             System.out.println("    | 3) Calcular su edad en años perro.   |.");
-            System.out.println("    | 4)Calcular su número de numerología. |.");
+            System.out.println("    | 4) Calcular su número de numerología.|.");
             System.out.println("    | 5) Creditos.                         |.");
             System.out.println("    | 6) Salir.                            |.");
             System.out.println("    |                                      |.");
