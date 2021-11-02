@@ -66,7 +66,7 @@ class Programa {
                     System.out.println("(__  _)                                   (__  _)");     
                     System.out.println("(_ ___)-._.-=-._.-=-._.-=-._.-=-._.-=-._.-(_ ___)");
                     System.out.println("`-._.-'                                   `-._.-'");
-                    System.out.println("Escoge una opcion: ");
+                    System.out.println("\nEscoge una opcion: ");
                     
                     int mes = datosEntrada.nextInt();
 
@@ -704,8 +704,17 @@ class Programa {
                 }
                 // Si ponen 5 se veran los creditos de quienes lo crearon
                 else if (accion == 5) {
-                    System.out.println("\n------------------------------------------------------------");
-                    System.out.println("Creadores:\n=> Juan Jose Perez Franco.\n=> Carlos Daniel Bohorquez Bolanos.");
+                    System.out.println("\n __| |____________________________________________| |__");
+                    System.out.println("(__   ____________________________________________   __)");
+                    System.out.println("   | |                                            | |");
+                    System.out.println("   | |                 Creadores                  | |");
+                    System.out.println("   | |                                            | |");
+                    System.out.println("   | |           Juan Jose Perez Franco           | |");
+                    System.out.println("   | |                                            | |");
+                    System.out.println("   | |      Carlos Daniel Bohorquez Bolanos       | |");
+                    System.out.println(" __| |____________________________________________| |__");
+                    System.out.println("(__   ____________________________________________   __)");
+                    System.out.println("   | |                                            | |");
                     Thread.sleep(5*1000);
                     System.out.println("\nRegresando al programa...");
                     System.out.println("------------------------------------------------------------");
