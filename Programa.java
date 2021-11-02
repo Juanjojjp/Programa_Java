@@ -532,12 +532,14 @@ class Programa {
                                     int dia = (diaNacimiento - fechaIntDia);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    Thread.sleep(4 * 1000);
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
                                     int dia = (fechaIntDia - diaNacimiento);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    Thread.sleep(4 * 1000);
                                     continue;
                                 }
                             }
@@ -547,12 +549,14 @@ class Programa {
                                     int dia = (diaNacimiento - fechaIntDia);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    Thread.sleep(4 * 1000);
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
                                     int dia = (fechaIntDia - diaNacimiento);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    Thread.sleep(4 * 1000);
                                     continue;
                                 }
                             }
@@ -562,12 +566,14 @@ class Programa {
                                     int dia = (diaNacimiento - fechaIntDia);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    Thread.sleep(4 * 1000);
                                     continue;
                                 }
                                 if (diaNacimiento < fechaIntDia) {
                                     int dia = (fechaIntDia - diaNacimiento);
                                     int dias_vividos = years_a_dias+mes_a_dias+dia;
                                     System.out.println("Has vivido "+dias_vividos+" dias.");
+                                    Thread.sleep(4 * 1000);
                                     continue;
                                 }
                             }                           
