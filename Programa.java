@@ -43,7 +43,8 @@ class Programa {
                 // Le dara su signo del zodiaco segun su fecha de nacimiento
                 if (accion == 1) {
                     System.out.println("\n------------------------------------------------------------");
-                    System.out.println("Para saber tu signo del zodiaco deberas poner tu mes y dia de nacimiento...\n");
+                    System.out.println("Signo Zodiacal.");
+                    System.out.println("\nPara saber tu signo del zodiaco deberas poner tu mes y dia de nacimiento...");
                     System.out.println("Pon tu mes de nacimiento (Pon unicamente el numero correspondiente): \n");
                     
                     System.out.println(".-=~=-.                                   .-=~=-.");
@@ -541,7 +542,8 @@ class Programa {
                 // Le dira cuantos dias ah vivido
                  else if (accion == 2) {
                     System.out.println("\n------------------------------------------------------------");
-                    System.out.println("Para calcular los dias vividos vamos a pedirte tu fecha de nacimiento.\n"); 
+                    System.out.println("Dias Vividos.\n");
+                    System.out.println("Para calcular los dias vividos vamos a pedirte tu fecha de nacimiento."); 
                     System.out.println("Porfavor Introduzaca el año en el que nacio:");
                     int yearNacimiento = datosEntrada.nextInt();
                     System.out.println("Porfavor Introduzaca el numero del mes en el que nacio:");
@@ -657,11 +659,12 @@ class Programa {
                 else if (accion == 3) {
                     try {
                         System.out.println("\n------------------------------------------------------------");
-                        System.out.println("Para calcular cuantos años perros tiene usted, debemos saber cuantos años tiene.\n");             
+                        System.out.println("Años humanos a perros.\n");
+                        System.out.println("Para calcular cuantos años perros tiene usted, debemos saber cuantos años tiene.");             
                         System.out.println("Cuantos años tiene:");
                         int yearsActuales = datosExtras.nextInt();
                         int yearsPerro = yearsActuales/7;
-                        System.out.println(nombre+" tienes "+yearsActuales+" años, y en perro equivalen a "+yearsPerro+" años perros.");             
+                        System.out.println("\n"+nombre+" tienes "+yearsActuales+" años, y en perro equivalen a "+yearsPerro+" años perros.");             
                         Thread.sleep(4*1000);
                         System.out.println("\nRegresando al programa...");
                         Thread.sleep(2*1000);
