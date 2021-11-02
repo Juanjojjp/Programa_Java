@@ -661,8 +661,22 @@ class Programa {
                 // Si ponen 4 hara la funcion de ver la numerologia dependiendo de una fecha
                 else if (accion == 4) {
                     try {
-                        System.out.println("\n------------------------------------------------------------");
-                        System.out.println("Calcular el número según la numerología, para esto debemos saber cual es el dia de su nacimiento.");
+                        System.out.println("\nNumerología");
+
+                        System.out.println("\n.-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-.");
+                        System.out.println("|                                                     |");
+                        System.out.println("| Numerología es cualquier creencia en la relación    |");
+                        System.out.println("| divina, mística entre un número y uno o más eventos |");       
+                        System.out.println("! coincidentes.                                       !");
+                        System.out.println(":                                                     :");
+                        System.out.println(". Tambien se dice que la numerología describe con     .");
+                        System.out.println(": exactitud tu personalidad y te mostrará una parte   :");
+                        System.out.println("! de ti que quizás ignorabas o que no conocías.       !");
+                        System.out.println("|                                                     |");
+                        System.out.println("| Para esto te vamos a pedir el dia de nacimiento.    |");
+                        System.out.println("|                                                     |");
+                        System.out.println("`-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-'");
+                        
                         System.out.println("Cual es su dia de nacimiento:");
                         int dia_nacimiento = datosExtras.nextInt();
                         // El codigo que se ejecutara si pone una fecha igual o menor a 31
@@ -676,6 +690,24 @@ class Programa {
                                 valor = Character.getNumericValue(cifra);
                                 res = res + valor;
                             }
+                            // Los vuelve a separar en cuyo caso que de 10 o mas
+                            if (res >= 10){
+                                String res2= String.valueOf(res);
+                                char cifra2;
+                                int valor2 = 0, res02 = 0;
+                                for (int i2 = 0; i2 < res2.length(); i2++) {
+                                    cifra2 = res2.charAt(i2);
+                                    valor2 = Character.getNumericValue(cifra2);
+                                    res02 = res02 + valor2;
+                                }
+                                // Da la numerologia
+                                System.out.println("\n" + nombre + " su numerología es: " + res02);
+                                Thread.sleep(4 * 1000);
+                                System.out.println("\nRegresando al programa...");
+                                Thread.sleep(2 * 1000);
+                                System.out.println("------------------------------------------------------------");
+                                continue;
+                            }
                             // Da la numerologia
                             System.out.println("\n"+nombre+" su numerología es: "+res);
                             Thread.sleep(4*1000);
@@ -683,8 +715,7 @@ class Programa {
                             Thread.sleep(2*1000);
                             System.out.println("------------------------------------------------------------"); 
                             continue;
-}
-                        else {
+                        } else {
                             System.out.println("\n------------------------------------------------------------");
                             System.out.println("No puso un numero valido");
                             Thread.sleep(2*1000);
